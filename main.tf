@@ -104,5 +104,5 @@ resource "azurerm_public_ip" "happ_pip" {
   location            = data.azurerm_resource_group.demo_rg.location
   resource_group_name = data.azurerm_resource_group.demo_rg.name
   allocation_method   = "Dynamic"
-  domain_name_label   = "${data.terraform_remote_state.haarg.outputs.prefix}-meow"
+  domain_name_label   = "${data.terraform_remote_state.haarg.outputs.prefix}-app"
 }

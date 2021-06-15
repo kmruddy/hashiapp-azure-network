@@ -1,5 +1,5 @@
-output "catapp_fqdn" {
-  value = azurerm_public_ip.catapp_pip.fqdn
+output "happ_fqdn" {
+  value = azurerm_public_ip.happ_pip.fqdn
 }
 
 output "tfver" {
