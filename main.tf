@@ -95,7 +95,7 @@ resource "azurerm_network_interface" "happ_nic" {
     name                          = "${data.terraform_remote_state.haarg.outputs.prefix}ipconfig"
     subnet_id                     = azurerm_subnet.subnet.id
     private_ip_address_allocation = "Dynamic"
-    public_ip_address_id          = azurerm_public_ip.happ-pip.id
+    public_ip_address_id          = azurerm_public_ip.happ_pip.id
   }
 }
 
